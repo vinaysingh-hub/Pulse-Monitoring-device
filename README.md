@@ -1,43 +1,49 @@
 # Pulse-Monitoring-device
 
-# 💓 Pulse Monitoring Device using ESP32
+# Pulse Monitoring Device using ESP32
 
-This project is a compact **Pulse Monitoring Device** designed using **ESP32** and a **Pulse Sensor**, with a custom PCB layout created using **KiCad**. The objective is to create a wearable or portable health monitoring system capable of detecting and displaying heart pulse data.
+This project is a compact Pulse Monitoring Device designed using ESP32 and a Pulse Sensor, with a custom PCB layout created using KiCad. The aim is to build a low-cost, real-time heart rate monitoring system with basic control features and future expandability.
 
-## 🔧 Features
+## Features
+
 - Real-time pulse monitoring
-- Compact custom-designed PCB
-- Low power consumption
-- Start/Stop switch control
-- Future support for Bluetooth/Wi-Fi data transmission (optional via ESP32)
+- Custom-designed PCB layout
+- Switch-controlled operation
+- Compact and low-power design
+- Scope for wireless data transmission (optional via ESP32)
 
----
-
-## 📦 Hardware Components Used
+## Hardware Components Used
 
 | Component       | Description                                  |
 |----------------|----------------------------------------------|
 | ESP32          | Microcontroller with Wi-Fi and BLE support   |
 | Pulse Sensor   | Heartbeat monitoring sensor                  |
-| Switch         | Push button to control data logging/power    |
+| Switch         | Push button for control                      |
 | Resistors/Capacitors | Basic supporting components             |
 | Custom PCB     | Designed using KiCad                         |
 
----
+## Software Tools Used
 
-## 🖥️ Software Tools Used
+- KiCad – for schematic and PCB layout design
+- Arduino IDE – for firmware development
+- PulseSensor Playground Library – for reading pulse data from the sensor
 
-- [KiCad](https://www.kicad.org/) – for PCB design
-- Arduino IDE – for programming ESP32
-- PulseSensor Playground Library – for reading pulse data
+## Working Principle
 
----
-
-## 🧠 Working Principle
-
-The **Pulse Sensor** detects heartbeats via changes in light absorption through skin and sends analog signals to ESP32. The microcontroller processes the signal and calculates Beats Per Minute (BPM). The device can be powered on/off using a simple switch.
-
----
+The Pulse Sensor detects the heartbeat based on changes in light absorption through the skin. This analog signal is fed to the ESP32, which processes the data to calculate the Beats Per Minute (BPM). A push-button switch is used to control data logging or device power.
 
 
+
+## How to Use
+
+1. Assemble the hardware components on the custom PCB.
+2. Upload the firmware (`pulse_monitor.ino`) to the ESP32 using Arduino IDE.
+3. Power on the device and place the Pulse Sensor on the fingertip or earlobe.
+4. Monitor the pulse data via serial monitor or an optional OLED display.
+
+## Future Enhancements
+
+- Integration of OLED display for visual BPM output
+- Bluetooth/Wi-Fi support for remote monitoring
+- Mobile app connectivity for data logging and visualization
 
