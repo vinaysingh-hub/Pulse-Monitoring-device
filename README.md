@@ -1,6 +1,5 @@
 # Pulse-Monitoring-device
 
-# Pulse Monitoring Device using ESP32
 
 This project is a compact Pulse Monitoring Device designed using ESP32 and a Pulse Sensor, with a custom PCB layout created using KiCad. The aim is to build a low-cost, real-time heart rate monitoring system with basic control features and future expandability.
 
